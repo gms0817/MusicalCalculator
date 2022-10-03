@@ -5,4 +5,4 @@ This version of MusicalCalculator includes the following sound options:
 
 - 5 different cat sound effects
 - 5 different dog sound effects
-- -24 different piano sound effects.
+- 24 different piano sound effects.
