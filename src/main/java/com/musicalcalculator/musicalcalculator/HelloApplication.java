@@ -191,13 +191,9 @@ public class HelloApplication extends Application {
 
     //Mathematical Operation Methods--------------------------------
     private void getSolution() {
-        System.out.println("Reached getSolution()");
         String output = outputText.getText();
         String expectedOutput = output.substring(output.indexOf(operator) + 1);
-        System.out.println("num1: " + num1);
-        System.out.println("num2: " + num2);
 
-        System.out.println("Expected Value " + expectedOutput);
         try{
             num2 = Double.parseDouble(output.substring(output.indexOf(operator) + 1));
 
@@ -223,12 +219,6 @@ public class HelloApplication extends Application {
 
     private void getSum(double num1, double num2) {
         double sum = num1 + num2;
-
-        System.out.println("Reached getSum()");
-        System.out.println("num1: " + num1);
-        System.out.println("num2: " + num2);
-        System.out.println("sum: " + sum);
-
         setOutput(sum);
     }
     private void getProduct(double num1, double num2) {
@@ -250,7 +240,6 @@ public class HelloApplication extends Application {
     //--------------------------------------------------------------
     //Sound Control Helper Methods
     private void getSound() throws URISyntaxException {
-        System.out.println(soundType);
         if(soundType.equals("Cats"))
             sound = getCatSound();
 
@@ -320,11 +309,6 @@ public class HelloApplication extends Application {
         }
         else
             output = "" + solution;
-
-        //Debugging Statements
-        System.out.println("Reached setOutput()");
-        System.out.println("solution: " + solution);
-        System.out.println("wholeNumSolution: " + wholeNumSolution);
 
         //Print output
         outputText.setText(output);
